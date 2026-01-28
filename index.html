@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="calculator-icon.jpg">
+</head>
+
+<body>
+
+  <h1 class="welcome">Welcome to Calculator <i class="fa-solid fa-calculator"></i> </h1>
+
+
+  <div class="calculator">
+    <h2 class="js-showResult result">0</h2>
+
+    <p>
+      <button class="btn" onclick="numberPass('1')">1</button>
+      <button class="btn" onclick="numberPass('2')">2</button>
+      <button class="btn" onclick="numberPass('3')">3</button>
+      <button class="btn operation-btn" onclick="operation('/')">/</button>
+    </p>
+
+    <p>
+      <button class="btn" onclick="numberPass('4')">4</button>
+      <button class="btn" onclick="numberPass('5')">5</button>
+      <button class="btn" onclick="numberPass('6')">6</button>
+      <button class="btn operation-btn" onclick="operation('*')">*</button>
+    </p>
+
+    <p>
+      <button class="btn" onclick="numberPass('7')">7</button>
+      <button class="btn" onclick="numberPass('8')">8</button>
+      <button class="btn" onclick="numberPass('9')">9</button>
+      <button class="btn operation-btn" onclick="operation('-')">-</button>
+    </p>
+
+    <p>
+      <button class="btn" onclick="numberPass('0')">0</button>
+      <button class="btn" onclick="numberPass('00')">00</button>
+      <button class="btn" onclick="calculation()">=</button>
+      <button class="btn operation-btn" onclick="operation('+')">+</button>
+    </p>
+
+    <button class="btn" onclick="clearAll()">Clear</button>
+
+  </div>
+
+
+
+  <script src="calculator-script.js"></script>
+</body>
+
+</html>
